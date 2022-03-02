@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Predecir bloque político</title>
+</head>
+<body>
+    
+    <div class="titulos-index">
+        <h2>Predictor de tendencia política según el texto de un tweet</h2>
+
+    </div>
+
+    <div class="container">
+
+        <form action="/predict" method="POST">
+
+            <div class="tweet-input">
+                <label>Tweet:</label>
+                <textarea type="text" name="tweet" id="tweet" placeholder="ingresa el texto de un tweet"></textarea>
+                
+            </div>
+
+            <input class="btn" type="submit" value="Enviar">
+
+        </form>
+
+        <div class="botones-links">
+            <a href="/promedio-10-tweets"><p class="boton-a">Promedio de 10 tweets</p></a>
+        </div>
+    </div>
+    
+    
+    
+    
+
+
+</body>
+</html>

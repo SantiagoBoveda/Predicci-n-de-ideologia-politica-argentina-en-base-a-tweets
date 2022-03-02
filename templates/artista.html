@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <title>tus versos</title>
+</head>
+<body>
+    
+    <div class="titulos-index">
+        <h2>Te pareces a:</h2>
+        <div>
+            <h3>verso original:</h3>
+            <div class="tweet-original">
+                <p>{{ verso }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mostrar-resultado">
+        <h3>{{ artista }}</h3>
+        <img src="{{imagen}}" alt="{{ artista }}" class="mostrar-imagen">
+    </div>
+
+    <div class="botones-links">
+        <a href="/"><p class="boton-a">Volver al inicio</p></a>
+        <a href="/versos"><p class="boton-a">Otro verso</p></a>
+    </div>
+</body>
+</html>
